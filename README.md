@@ -5,7 +5,7 @@
 
 Este projeto apresenta a resolução do Problema da Mochila 0/1,
 desenvolvido como atividade avaliativa AV3 da disciplina de
-Resolução de Problemas.
+Construção e Análise de Algoritmos.
 
 O objetivo é selecionar itens para uma mochila, maximizando
 o valor total sem ultrapassar sua capacidade máxima.
