@@ -1,3 +1,4 @@
+
 public class Main {
     public static void main(String[] args) {
 
@@ -13,10 +14,22 @@ public class Main {
 
         int[] capacidades = {6, 10, 15};
 
-        System.out.println("Problema da Mochila - AV3");
-
         for (int capacidade : capacidades) {
-            System.out.println("Capacidade: " + capacidade);
+
+            MochilaRecursiva.Resultado resultado =
+                    MochilaRecursiva.resolver(itens, capacidade);
+
+            System.out.println("\nCapacidade: " + capacidade);
+            System.out.println("Valor máximo: "
+                    + resultado.getValorMaximo());
+            System.out.println("Peso total: "
+                    + resultado.getPesoTotal());
+
+            System.out.println("Itens escolhidos:");
+
+            for (Item item : resultado.getItensEscolhidos()) {
+                System.out.println("- " + item.getNome());
+            }
         }
     }
 }
